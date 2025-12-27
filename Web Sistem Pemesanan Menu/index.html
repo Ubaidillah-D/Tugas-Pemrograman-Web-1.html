@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Sistem Pemesanan Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        select, input, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .hasil {
+            margin-top: 20px;
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Pemesanan Menu</h2>
+
+    <label>Nama Pembeli</label>
+    <input type="text" id="nama">
+
+    <label>Pilih Menu</label>
+    <select id="menu">
+        <option value="15000">Nasi Goreng - Rp15.000</option>
+        <option value="12000">Mie Goreng - Rp12.000</option>
+        <option value="10000">Ayam Geprek - Rp10.000</option>
+        <option value="8000">Es Teh - Rp8.000</option>
+    </select>
+
+    <label>Jumlah</label>
+    <input type="number" id="jumlah" value="1" min="1">
+
+    <button onclick="hitung()">Pesan Sekarang</button>
+
+    <div class="hasil" id="hasil"></div>
+</div>
+
+<script>
+function hitung() {
+    let nama = document.getElementById("nama").value;
+    let menu = document.getElementById("menu");
+    let harga = parseInt(menu.value);
+    let namaMenu = menu.options[menu.selectedIndex].text;
+    let jumlah = parseInt(document.getElementById("jumlah").value);
+
+    let total = harga * jumlah;
+
+    document.getElementById("hasil").innerHTML = `
+        <b>Ringkasan Pesanan</b><br>
+        Nama: ${nama}<br>
+        Menu: ${namaMenu}<br>
+        Jumlah: ${jumlah}<br>
+        Total Bayar: <b>Rp ${total.toLocaleString()}</b>
+    `;
+}
+</script>
+
+</body>
+</html>
