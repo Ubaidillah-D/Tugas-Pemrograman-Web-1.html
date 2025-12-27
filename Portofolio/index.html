@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio — Ubaidillah</title>
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Feather icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    :root{
+      --brand: #4f46e5; /* indigo-600 */
+      --muted: #6b7280;
+    }
+    body{ font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    .hero{
+      background: linear-gradient(120deg, rgba(79,70,229,0.12), rgba(99,102,241,0.06));
+      border-radius: 1rem;
+      padding: 3rem;
+    }
+    .avatar{
+      width: 140px; height:140px; border-radius: .75rem; object-fit:cover; box-shadow:0 8px 30px rgba(15,23,42,0.08);
+    }
+    .card-project{ transition: transform .25s ease, box-shadow .25s ease; }
+    .card-project:hover{ transform: translateY(-6px); box-shadow: 0 12px 30px rgba(15,23,42,0.12); }
+    .chip{ background:#eef2ff; color:var(--brand); padding:.25rem .6rem; border-radius:999px; font-weight:600; font-size:.8rem; }
+    footer{ font-size:.9rem; color:var(--muted); }
+    /* Responsive two-column hero */
+    @media(min-width:992px){ .hero{ display:flex; gap:2rem; align-items:center; } }
+    /* subtle gradient border for sections */
+    .section{ padding:2rem; border-radius:.8rem; background:linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6)); }
+  </style>
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Ubaidillah</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-3 d-none d-lg-block"><a class="btn btn-outline-primary" href="#contact">Hire me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="container mt-5">
+  <div class="hero shadow-sm">
+    <div class="me-3 text-center text-lg-start">
+      <img src="profil.jpg" alt="avatar" class="avatar mb-3">
+      <div class="d-none d-lg-block text-start">
+        <span class="chip">Frontend • Backend</span>
+      </div>
+    </div>
+    <div>
+      <h1 class="display-6 fw-bold">Halo, saya <span style="color:var(--brand)">Ubaidillah</span></h1>
+      <p class="lead text-muted">Saya developer web yang fokus membuat aplikasi cepat, responsif, dan indah. Saya menyukai tantangan pada integrasi front-end & back-end serta optimasi performa.</p>
+      <div class="mt-3">
+        <a href="#projects" class="btn btn-primary me-2">Lihat Project</a>
+        <a href="#contact" class="btn btn-outline-secondary">Kontak</a>
+      </div>
+      <div class="mt-4 d-flex gap-3 flex-wrap" aria-hidden>
+        <small class="text-muted me-3">📍 Indonesia</small>
+        <small class="text-muted">💼 Freelance</small>
+        <small class="text-muted">✉️ ubaidillahap23@gmail.com</small>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container my-5">
+  <section id="about" class="section mb-4">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h3>Tentang Saya</h3>
+        <p class="text-muted">Saya memiliki pengalaman membangun aplikasi web menggunakan HTML, CSS, JavaScript, React, Node.js, dan MySQL. Dalam setiap project saya menekankan pada kemudahan penggunaan, aksesibilitas, dan performa.</p>
+        <ul class="list-unstyled">
+          <li><strong>🎯 Fokus:</strong> Web Apps, API, UI/UX</li>
+          <li><strong>🔧 Tools:</strong> Bootstrap, Git, VSCode, Postman</li>
+          <li><strong>📚 Belajar:</strong> Algorithms, System Design</li>
+        </ul>
+      </div>
+      <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
+        <div class="card p-3 shadow-sm">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="mb-0">Available for</h5>
+              <small class="text-muted">Freelance & full-time</small>
+            </div>
+            <div class="text-end">
+              <h4 class="mb-0">$— / hr</h4>
+              <small class="text-muted">Rate bisa dinegosiasikan</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h3>Project</h3>
+      <div>
+        <a class="btn btn-sm btn-outline-secondary me-2" href="#">All</a>
+        <a class="btn btn-sm btn-outline-secondary" href="#">Web</a>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <!-- Project card 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-project h-100">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&s=placeholder" class="card-img-top" alt="Project 1">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Marketplace Demo</h5>
+            <p class="card-text text-muted small">Aplikasi marketplace sederhana dengan fitur cart, checkout, dan admin panel.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="text-muted small">React • Node</div>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Marketplace Demo" data-desc="Demo marketplace built with React and Node." data-img="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&s=placeholder">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project card 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-project h-100">
+          <img src="https://vuejsexamples.com/content/images/2020/05/adminfy.png" class="card-img-top" alt="Project 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Dashboard Admin</h5>
+            <p class="card-text text-muted small">Dashboard untuk monitoring data, dilengkapi filter dan grafik performa.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="text-muted small">Bootstrap • ChartJS</div>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Dashboard Admin" data-desc="Admin dashboard with filters and charts." data-img="https://images.unsplash.com/photo-1525186402429-5f8588a6c7d7?q=80&w=1200&auto=format&fit=crop&s=placeholder">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project card 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-project h-100">
+          <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200&auto=format&fit=crop&s=placeholder" class="card-img-top" alt="Project 3">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Clinic App</h5>
+            <p class="card-text text-muted small">Sistem pencatatan pasien dan jadwal dokter untuk klinik kecil.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="text-muted small">Vanilla JS • PHP</div>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Clinic App" data-desc="Patient record and scheduling system." data-img="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200&auto=format&fit=crop&s=placeholder">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills" class="section mb-4">
+    <h3>Skills</h3>
+    <div class="row g-3 mt-2">
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label class="form-label">HTML / CSS</label>
+          <div class="progress" style="height:12px;"><div class="progress-bar" role="progressbar" style="width:95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div></div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">JavaScript</label>
+          <div class="progress" style="height:12px;"><div class="progress-bar" role="progressbar" style="width:88%">88%</div></div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">React</label>
+          <div class="progress" style="height:12px;"><div class="progress-bar" role="progressbar" style="width:82%">82%</div></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label class="form-label">Node / Express</label>
+          <div class="progress" style="height:12px;"><div class="progress-bar" role="progressbar" style="width:78%">78%</div></div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Database (MySQL)</label>
+          <div class="progress" style="height:12px;"><div class="progress-bar" role="progressbar" style="width:75%">75%</div></div>
+        </div>
+        <div>
+          <label class="form-label">UI/UX</label>
+          <div class="progress" style="height:12px;"><div class="progress-bar" role="progressbar" style="width:70%">70%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="mb-5 section">
+    <div class="row">
+      <div class="col-lg-6">
+        <h3>Kontak</h3>
+        <p class="text-muted">Ingin bekerja sama? Isi form di samping atau kirim email langsung ke <strong>ubaidillahap23@gmail.com</strong>.</p>
+        <ul class="list-unstyled">
+          <li><strong>Lokasi:</strong> Tangerang Selatan, Indonesia</li>
+          <li><strong>Telepon:</strong> +62 877-7582-3741</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <form id="contactForm" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label class="form-label">Nama</label>
+            <input type="text" class="form-control" required>
+            <div class="invalid-feedback">Tolong isi nama Anda.</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" required>
+            <div class="invalid-feedback">Tolong isi email valid.</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Pesan</label>
+            <textarea class="form-control" rows="4" required></textarea>
+            <div class="invalid-feedback">Tolong tulis pesan Anda.</div>
+          </div>
+          <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-white mt-4 py-4 shadow-sm">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>&copy; <span id="year"></span> Ubaidillah. All rights reserved.</div>
+    <div>
+      <a class="text-muted text-decoration-none me-3" href="#">GitHub</a>
+      <a class="text-muted text-decoration-none me-3" href="#">LinkedIn</a>
+      <a class="text-muted text-decoration-none" href="#">Twitter</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Project Modal -->
+<div class="modal fade" id="projectModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projectModalLabel">Project</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImg" src="" alt="project" class="img-fluid rounded mb-3"/>
+        <p id="modalDesc"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="#" class="btn btn-primary">Live Demo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // set year
+  document.getElementById('year').textContent = new Date().getFullYear();
+  // feather icons
+  feather && feather.replace();
+
+  // Modal populate
+  var projectModal = document.getElementById('projectModal')
+  projectModal.addEventListener('show.bs.modal', function (event) {
+    var button = event.relatedTarget;
+    var title = button.getAttribute('data-title');
+    var desc = button.getAttribute('data-desc');
+    var img = button.getAttribute('data-img');
+    document.getElementById('projectModalLabel').textContent = title;
+    document.getElementById('modalDesc').textContent = desc;
+    document.getElementById('modalImg').src = img;
+  })
+
+  // simple bootstrap validation
+  (function () {
+    'use strict'
+    var forms = document.querySelectorAll('.needs-validation')
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          } else {
+            event.preventDefault()
+            alert('Terima kasih! Pesan Anda telah dikirim (demonstrasi).')
+            form.reset()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+</script>
+</body>
+</html>
